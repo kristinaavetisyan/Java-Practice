@@ -132,17 +132,17 @@ public class Homework1 {
 
         /* 1.11  Write a program in Java to input 5 numbers from the keyboard and find their sum and average. */
 
-        int sum = 0;
-        double avg = 0;
+        int sum = 0, inputNums;
+        double avg;
 
-        for (int i = 0; i <= 5; i++) {
-            sum += i;
-            avg++;
+        for (int i = 0; i < 5; i++) {
 
+            inputNums = scanner.nextInt();
+            System.out.println("Insert number");
+            sum += inputNums;
         }
-
-        System.out.println(sum);
-        System.out.println(sum / avg);
+        avg = sum / 5;
+        System.out.println("The sum of numbers is " + sum + "\nThe average is " + avg);
 
 
         /* 1.12   Write a program Check Whether Number is Even or Odd */
